@@ -3,7 +3,7 @@ import { FiLinkedin } from "react-icons/fi";
 
 export default function Contacts() {
   return (
-    <div className="py-2 px-4 md:py-24 md:px-52 ">
+    <div id="contacts" className="py-2 px-4 md:py-24 md:px-52 ">
       <h2 className="flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl">
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">Contact</span>
@@ -47,8 +47,15 @@ export default function Contacts() {
         </form>
 
         <div className="flex items-center gap-8 text-3xl text-textColor">
-          <FaGithub />
-          <FiLinkedin />
+          <a target="_blank" href="https://github.com/nehal7472">
+            <FaGithub />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ahsanul-haque-nehal/"
+          >
+            <FiLinkedin />
+          </a>
         </div>
       </div>
     </div>

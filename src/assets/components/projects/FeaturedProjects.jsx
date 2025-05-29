@@ -1,6 +1,6 @@
 export default function FeaturedProjects() {
   return (
-    <div className="bg-secondaryBgColor py-2 px-4 md:py-24 md:px-52 ">
+    <div id="projects" className="bg-secondaryBgColor py-2 px-4 md:py-24 md:px-52 ">
       <h2 className="flex flex-wrap items-center gap-4 my-8 pb-4 text-center sm:text-left text-xl md:text-4xl">
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">Featured Projects</span>

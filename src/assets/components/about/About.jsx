@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <div className="py-2 px-4 md:py-24 md:px-52  bg-secondaryBgColor">
+    <div
+      id="about"
+      className="py-2 px-4 md:py-24 md:px-52  bg-secondaryBgColor"
+    >
       <h2 className="flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl">
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">About Me</span>
@@ -27,8 +30,8 @@ export default function About() {
           SEO-friendly, and scalable web applications.
         </p>
         <img
-          src="about.JPG"
-          alt=""
+          src="about.png"
+          alt="about me"
           className="w-full max-w-xs sm:max-w-sm md:max-w-[350px] max-h-[450px] rounded-md mx-auto md:mx-0"
         />
       </div>

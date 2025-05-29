@@ -20,6 +20,9 @@ export default {
         primaryBgColor : "#ffffff",
         secondaryBgColor: "#F2F2F2",
         textColor: "#1F1F1F",
+        darkPrimaryBgColor: "#1F1F1F",
+        darkSecondaryBgColor: "#2C2C2C",
+        darkTextColor: "#F2F2F2",
       },
       boxShadow: {
         "3xl": "1.5px 4.5px 8px 4.5px #dddddd",
