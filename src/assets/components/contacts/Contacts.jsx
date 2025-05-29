@@ -32,7 +32,7 @@ export default function Contacts() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full outline-none bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
+              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
             />
           </div>
 
@@ -40,7 +40,7 @@ export default function Contacts() {
             <input
               type="email"
               placeholder="007cryptic@gmail.com"
-              className="w-full outline-none bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
+              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
             />
           </div>
 
@@ -48,7 +48,7 @@ export default function Contacts() {
             <textarea
               placeholder="Write your message..."
               rows="4"
-              className="w-full outline-none bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor resize-none dark:text-darkTextColor"
+              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor resize-none "
             ></textarea>
           </div>
 
