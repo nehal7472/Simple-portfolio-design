@@ -1,5 +1,7 @@
 Simple Portfolio Website
-Link - 
+
+Link - https://simple-portfolio-nehal.netlify.app/
+
 This is a modern and minimal portfolio website built with the Vite + React template. It features a clean UI, responsive design, dark mode, and is styled using Tailwind CSS. Designed in Figma and enhanced with React Icons for visual clarity.
 
 ✨ Features
