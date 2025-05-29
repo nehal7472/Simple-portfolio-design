@@ -3,8 +3,8 @@ import { FiMenu } from "react-icons/fi";
 export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white dark:text-darkTextColor dark:bg-darkPrimaryBgColor  shadow-md transition-colors duration-300">
-      <nav className="h-[80px] flex flex-col md:flex-row justify-between items-center text-textColor px-4 sm:px-8 md:px-16">
-        <div className="flex justify-between items-center w-full md:w-auto">
+      <nav className="h-[80px] flex flex-col md:flex-row justify-between items-center text-textColor px-8 md:px-16">
+        <div className="flex justify-between  items-center w-full md:w-auto">
           <img src="logo.png" alt="" width="40" />
           <div className="md:hidden">
             <FiMenu className="w-6 h-8 text-textColor" />

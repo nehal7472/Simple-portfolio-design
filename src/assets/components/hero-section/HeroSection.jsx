@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <>
       <section className="w-full h-[calc(100vh-80px)] mt-[80px]">
-        <div className="w-full h-full bg-[url('heroImage.JPG')] bg-cover bg-center flex flex-col items-center justify-center gap-10 px-4 text-center">
+        <div className="w-full h-full bg-[url('heroImage-2.JPG')] bg-cover bg-center flex flex-col items-center justify-center gap-10 px-4 text-center">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
