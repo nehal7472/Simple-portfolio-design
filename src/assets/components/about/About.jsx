@@ -1,13 +1,19 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../framerMotion/varriants";
 
-export default function About() {
+export default function About({ darkMode }) {
   return (
     <div
       id="about"
-      className="py-2 px-4 md:py-24 md:px-52 dark:bg-darkSecondaryBgColor  bg-secondaryBgColor"
+      className={`py-2 px-4 md:py-24 md:px-52 dark:bg-darkSecondaryBgColor  bg-secondaryBgColor ${
+        darkMode ? "bg-darkSecondaryBgColor text-darkTextColor" : ""
+      }`}
     >
-      <h2 className="flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor">
+      <h2
+        className={`flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor ${
+          darkMode ? "text-white" : "text-textColor"
+        }`}
+      >
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">About Me</span>
         <div className="flex-grow border-t border-gray-400"></div>
@@ -18,7 +24,9 @@ export default function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="max-h-[400px] md:max-h-[500px] overflow-y-scroll md:overflow-hidden  text-justify text-sm sm:text-base leading-relaxed dark:text-darkTextColor"
+          className={`max-h-[400px] md:max-h-[500px] overflow-y-scroll md:overflow-hidden  text-justify text-sm sm:text-base leading-relaxed dark:text-darkTextColor ${
+            darkMode ? "text-white" : "text-textColor"
+          }`}
         >
           As a passionate and goal-driven Frontend Web Developer, I specialize
           in crafting responsive, user-friendly, and modern web interfaces using

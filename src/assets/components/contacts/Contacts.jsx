@@ -1,22 +1,33 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { fadeIn } from "../framerMotion/varriants";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 
-export default function Contacts() {
+export default function Contacts({ darkMode }) {
   return (
     <div
       id="contacts"
-      className="py-2 px-4 md:py-24 md:px-52 dark:bg-darkSecondaryBgColor "
+      className={`py-2 px-4 md:py-24 md:px-52 dark:bg-darkSecondaryBgColor  ${
+        darkMode ? "bg-darkSecondaryBgColor" : "bg-secondaryBgColor"
+      }`}
     >
-      <h2 className="flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor">
+      <h2
+        className={`flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor ${
+          darkMode ? "text-white" : "text-textColor"
+        }`}
+      >
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">Contact</span>
         <div className="flex-grow border-t border-gray-400"></div>
       </h2>
 
       <div className="flex flex-col items-center gap-8">
-        <p className="text-center px-4 dark:text-darkTextColor">
+        <p
+          className={`text-center px-4 dark:text-darkTextColor ${
+            darkMode ? "text-white" : "text-textColor"
+          }`}
+        >
           I am currently seeking employment, and I would appreciate it if you
           could contact me with any available job opportunities.
         </p>
@@ -32,7 +43,11 @@ export default function Contacts() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
+              className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
+                darkMode
+                  ? "text-white bg-darkSecondaryBgColor"
+                  : "text-textColor"
+              }`}
             />
           </div>
 
@@ -40,7 +55,11 @@ export default function Contacts() {
             <input
               type="email"
               placeholder="007cryptic@gmail.com"
-              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor"
+              className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
+                darkMode
+                  ? "text-white bg-darkSecondaryBgColor"
+                  : "text-textColor"
+              }`}
             />
           </div>
 
@@ -48,12 +67,21 @@ export default function Contacts() {
             <textarea
               placeholder="Write your message..."
               rows="4"
-              className="w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor resize-none "
+              className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
+                darkMode
+                  ? "text-white bg-darkSecondaryBgColor"
+                  : "text-textColor"
+              }`}
             ></textarea>
           </div>
 
-          <button type="submit" className="btn text-2xl px-6 w-full sm:w-fit dark:text-darkTextColor">
-            Submit
+          <button
+            type="submit"
+            className={`btn text-2xl px-6 w-full sm:w-fit dark:text-darkTextColor ${
+              darkMode ? "text-white" : "text-textColor"
+            }`}
+          >
+            <a href="#">Submit</a>
           </button>
         </motion.form>
 
@@ -62,7 +90,9 @@ export default function Contacts() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="flex items-center gap-8 text-3xl text-textColor dark:text-darkTextColor"
+          className={`flex items-center gap-8 text-3xl text-textColor dark:text-darkTextColor ${
+            darkMode ? "text-white" : "text-textColor"
+          }`}
         >
           <a target="_blank" href="https://github.com/nehal7472">
             <FaGithub />

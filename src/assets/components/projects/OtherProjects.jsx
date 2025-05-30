@@ -1,11 +1,20 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { fadeIn } from "../framerMotion/varriants";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 
-export default function OtherProjects() {
+export default function OtherProjects({ darkMode }) {
   return (
-    <div className="bg-secondaryBgColor dark:bg-darkPrimaryBgColor py-2 px-4 md:py-24 md:px-52 ">
-      <h2 className="flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor">
+    <div
+      className={`bg-secondaryBgColor dark:bg-darkPrimaryBgColor py-2 px-4 md:py-24 md:px-52  ${
+        darkMode ? "bg-darkPrimaryBgColor" : "bg-secondaryBgColor"
+      }`}
+    >
+      <h2
+        className={`flex items-center gap-4 my-8 pb-4 text-xl md:text-4xl dark:text-darkTextColor ${
+          darkMode ? "text-white" : "text-textColor"
+        }`}
+      >
         <div className="flex-grow border-t border-gray-400"></div>
         <span className="font-semibold uppercase">Other Projects</span>
         <div className="flex-grow border-t border-gray-400"></div>
@@ -34,28 +43,66 @@ export default function OtherProjects() {
             className="flex flex-col justify-center items-center md:items-start w-full"
           >
             <div className="flex flex-col gap-2 border-b-2 border-gray-600 pb-2">
-              <h4 className="dark:text-darkTextColor">Blog Website</h4>
-              <p className="hidden md:block dark:text-darkTextColor">
+              <h4
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Blog Website
+              </h4>
+              <p
+                className={`hidden md:block dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
                 Built with a clean and responsive design, it features a
                 dynamic..
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mt-2">
-              <p className="dark:text-darkTextColor">React</p>
-              <p className="dark:text-darkTextColor">Tailwind</p>
-              <p className="dark:text-darkTextColor">Figma</p>
-              <p className="dark:text-darkTextColor">Daisy</p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                React
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Tailwind
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Figma
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Daisy
+              </p>
             </div>
             <div className="flex gap-2 mt-2">
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 href="https://github.com/nehal7472/Blogs"
                 target="_blank"
               >
                 <FaGithub />
               </a>
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 target="_blank"
                 href="https://simple-blogs-flax.vercel.app/"
               >
@@ -87,28 +134,66 @@ export default function OtherProjects() {
             className="flex flex-col justify-center i w-full items-center md:items-start"
           >
             <div className="flex flex-col gap-2 border-b-2 border-gray-600 pb-2">
-              <h4 className="dark:text-darkTextColor">Find Pokemon!</h4>
-              <p className="hidden md:block dark:text-darkTextColor">
+              <h4
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Find Pokemon!
+              </h4>
+              <p
+                className={`hidden md:block dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Numquam blanditiis quo
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mt-2">
-              <p className="dark:text-darkTextColor">React</p>
-              <p className="dark:text-darkTextColor">Context API</p>
-              <p className="dark:text-darkTextColor">Figma</p>
-              <p className="dark:text-darkTextColor">Tailwind</p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                React
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Context API
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Figma
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Tailwind
+              </p>
             </div>
             <div className="flex gap-2 mt-2">
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 href="https://github.com/nehal7472/Searching-Pokemon"
                 target="_blank"
               >
                 <FaGithub />
               </a>
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 target="_blank"
                 href="https://simple-blogs-flax.vercel.app/"
               >
@@ -137,28 +222,66 @@ export default function OtherProjects() {
             className="flex flex-col justify-center  w-full items-center md:items-start"
           >
             <div className="flex flex-col gap-2 border-b-2 border-gray-600 pb-2">
-              <h4 className="dark:text-darkTextColor">Todo List</h4>
-              <p className="hidden md:block dark:text-darkTextColor">
+              <h4
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Todo List
+              </h4>
+              <p
+                className={`hidden md:block dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Numquam blanditiis quo
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mt-2">
-              <p className="dark:text-darkTextColor">Tailwind</p>
-              <p className="dark:text-darkTextColor">Css</p>
-              <p className="dark:text-darkTextColor">Figma</p>
-              <p className="dark:text-darkTextColor">React</p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Tailwind
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Css
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Figma
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                React
+              </p>
             </div>
             <div className="flex gap-2 mt-2">
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 href="https://github.com/nehal7472/React-JS-Todo-List"
                 target="_blank"
               >
                 <FaGithub />
               </a>
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 target="_blank"
                 href="https://nehaltodo.netlify.app/"
               >
@@ -187,28 +310,66 @@ export default function OtherProjects() {
             className="flex flex-col justify-center  w-full items-center md:items-start"
           >
             <div className="flex flex-col gap-2 border-b-2 border-gray-600 pb-2">
-              <h4 className="dark:text-darkTextColor">Wall Clock</h4>
-              <p className="hidden md:block dark:text-darkTextColor">
+              <h4
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Wall Clock
+              </h4>
+              <p
+                className={`hidden md:block dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Numquam blanditiis quo
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mt-2">
-              <p className="dark:text-darkTextColor">Html</p>
-              <p className="dark:text-darkTextColor">Css</p>
-              <p className="dark:text-darkTextColor">Figma</p>
-              <p className="dark:text-darkTextColor">Javascript</p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Html
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Css
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Figma
+              </p>
+              <p
+                className={`dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
+              >
+                Javascript
+              </p>
             </div>
             <div className="flex gap-2 mt-2">
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 href="https://github.com/nehal7472/Wall-Clock"
                 target="_blank"
               >
                 <FaGithub />
               </a>
               <a
-                className="text-2xl text-gray-600 dark:text-darkTextColor"
+                className={`text-2xl text-gray-600 dark:text-darkTextColor ${
+                  darkMode ? "text-white" : "text-textColor"
+                }`}
                 target="_blank"
                 href="https://nehal7472.github.io/Wall-Clock/"
               >

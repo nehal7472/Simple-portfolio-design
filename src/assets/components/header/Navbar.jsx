@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 
-export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  console.log(darkMode);
+export default function Navbar({ toggleDarkMode, darkMode }) {
+  console.log(toggleDarkMode);
 
   return (
     <div
@@ -84,7 +81,7 @@ export default function Navbar() {
           </button>
           <label className="relative inline-flex items-center cursor-pointer">
             <input
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={toggleDarkMode}
               type="checkbox"
               className="sr-only peer"
             />
