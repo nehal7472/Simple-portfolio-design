@@ -8,7 +8,7 @@ export default function HeroSection({ darkMode }) {
     <>
       <section className="w-full h-[calc(100vh-80px)] mt-[80px]">
         <div
-          className={`w-full h-full bg-[url('HeroImage.JPG')] bg-cover bg-center flex flex-col items-center justify-center gap-10 px-4 text-center ${
+          className={`w-full h-full bg-[url('hero.png')] bg-cover bg-center flex flex-col items-center justify-center gap-10 px-4 text-center ${
             darkMode ? "bg-darkPrimaryBgColor" : "bg-white"
           }`}
         >

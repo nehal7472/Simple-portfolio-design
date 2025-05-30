@@ -1,7 +1,7 @@
 export default function Footer({ darkMode }) {
   return (
     <p
-      className={`text-center py-4 bg-secondaryBgColor dark:bg-darkSecondaryBgColor  text-textGray dark:text-darkTextColor ${
+      className={`text-center py-4  text-textGray dark:text-darkTextColor ${
         darkMode ? "text-white bg-darkPrimaryBgColor" : "text-textColor"
       }`}
     >

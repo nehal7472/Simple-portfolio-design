@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { fadeIn } from "../framerMotion/varriants";
 
@@ -5,8 +6,8 @@ export default function About({ darkMode }) {
   return (
     <div
       id="about"
-      className={`py-2 px-4 md:py-24 md:px-52 dark:bg-darkSecondaryBgColor  bg-secondaryBgColor ${
-        darkMode ? "bg-darkSecondaryBgColor text-darkTextColor" : ""
+      className={`py-2 px-4 md:py-24 md:px-52 ${
+        darkMode ? "bg-darkSecondaryBgColor" : ""
       }`}
     >
       <h2

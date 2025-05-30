@@ -6,8 +6,8 @@ import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 export default function OtherProjects({ darkMode }) {
   return (
     <div
-      className={`bg-secondaryBgColor dark:bg-darkPrimaryBgColor py-2 px-4 md:py-24 md:px-52  ${
-        darkMode ? "bg-darkPrimaryBgColor" : "bg-secondaryBgColor"
+      className={`py-2 px-4 md:py-24 md:px-52 ${
+        darkMode ? "bg-darkPrimaryBgColor" : ""
       }`}
     >
       <h2
