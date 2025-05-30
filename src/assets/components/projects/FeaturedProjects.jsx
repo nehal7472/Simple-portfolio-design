@@ -8,7 +8,7 @@ export default function FeaturedProjects({ darkMode }) {
     <div
       id="projects"
       className={`py-2 px-4 md:py-24 md:px-52 ${
-        darkMode ? "bg-darkSecondaryBgColor" : ""
+        darkMode ? "bg-darkSecondaryBgColor" : "bg-secondaryBgColor"
       }`}
     >
       <h2

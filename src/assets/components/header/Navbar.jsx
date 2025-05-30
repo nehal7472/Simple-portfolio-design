@@ -1,19 +1,26 @@
 import { FiMenu } from "react-icons/fi";
+import { IoLogoAngular } from "react-icons/io";
 
 export default function Navbar({ toggleDarkMode, darkMode }) {
   console.log(toggleDarkMode);
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  shadow-md transition-colors duration-300 dark:bg-darkPrimaryBgColor dark:text-darkTextColor${
+      className={`fixed top-0 left-0 w-svw z-50  shadow-md transition-colors duration-300 dark:bg-darkPrimaryBgColor dark:text-darkTextColor${
         darkMode ? " bg-darkPrimaryBgColor" : " bg-white  "
       }`}
     >
       <nav className="h-[80px] flex flex-col md:flex-row justify-between items-center text-textColor px-8 md:px-16">
         <div className="flex justify-between  items-center w-full md:w-auto">
-          <img src="logo.png" alt="" width="40" />
+          <IoLogoAngular
+            className={`text-[40px]  ${darkMode ? "text-white" : "text-black"}`}
+          />
           <div className="md:hidden">
-            <FiMenu className="w-6 h-8 text-textColor" />
+            <FiMenu
+              className={`text-[40px]  ${
+                darkMode ? "text-white" : "text-black"
+              }`}
+            />
           </div>
         </div>
         <ul className="hidden md:flex justify-center items-center gap-4 mt-4 md:mt-0">

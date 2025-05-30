@@ -7,7 +7,7 @@ export default function About({ darkMode }) {
     <div
       id="about"
       className={`py-2 px-4 md:py-24 md:px-52 ${
-        darkMode ? "bg-darkSecondaryBgColor" : ""
+        darkMode ? "bg-darkSecondaryBgColor" : "bg-secondaryBgColor"
       }`}
     >
       <h2

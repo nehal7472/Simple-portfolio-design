@@ -46,7 +46,7 @@ export default function Contacts({ darkMode }) {
               className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
                 darkMode
                   ? "text-white bg-darkSecondaryBgColor"
-                  : "text-textColor"
+                  : "text-textColor bg-secondaryBgColor"
               }`}
             />
           </div>
@@ -58,7 +58,7 @@ export default function Contacts({ darkMode }) {
               className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
                 darkMode
                   ? "text-white bg-darkSecondaryBgColor"
-                  : "text-textColor"
+                  : "text-textColor bg-secondaryBgColor"
               }`}
             />
           </div>
@@ -70,7 +70,7 @@ export default function Contacts({ darkMode }) {
               className={`w-full outline-none dark:bg-darkSecondaryBgColor text-textGray dark:text-darkTextColor ${
                 darkMode
                   ? "text-white bg-darkSecondaryBgColor"
-                  : "text-textColor"
+                  : "text-textColor bg-secondaryBgColor"
               }`}
             ></textarea>
           </div>
